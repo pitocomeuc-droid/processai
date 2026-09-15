@@ -371,54 +371,31 @@ REGRAS para insights:
 - time_estimate e financial_impact só quando houver dados suficientes para calcular
 - Máximo 3 insights por resposta — priorize os mais relevantes
 
-━━━ QUANDO GERAR O DIAGNÓSTICO ESTRUTURADO ━━━
-Somente após investigação suficiente (mínimo 3 trocas sobre o problema).
-O diagnóstico é um TEASER DE OPORTUNIDADE — mostra o problema e o potencial, mas nunca o caminho.
-Inclua ao final da resposta:
+━━━ QUANDO IDENTIFICAR UMA OPORTUNIDADE CLARA ━━━
+Após investigação suficiente (mínimo 3 trocas), NÃO gere um plano ou lista de passos.
+Em vez disso, faça três coisas na resposta:
 
-${PLAN_START}
-{
-  "titulo": "Nome do problema central identificado",
-  "metodologia": "PDCA|Lean|Kaizen|5S|5 Porquês",
-  "tarefas": [
-    {
-      "titulo": "Nome da oportunidade (o que pode melhorar)",
-      "descricao": "O que está acontecendo hoje e qual o custo real disso para a empresa — em tempo, dinheiro ou risco",
-      "prioridade": "alta|media|baixa",
-      "prazo_dias": null,
-      "impacto": "Como a empresa fica quando isso for resolvido — o cenário futuro desejado"
-    }
-  ],
-  "kpis": ["Indicador que vai melhorar quando resolvido", "Segundo indicador de melhoria"],
-  "resumo": "Uma frase impactante: o que essa oportunidade representa para a empresa",
-  "solucoes_possiveis": [
-    {
-      "tipo": "app|automacao|formulario|relatorio|site",
-      "titulo": "Nome da solução (o que nosso time pode construir)",
-      "descricao": "O resultado que essa solução entrega para este cliente — sem explicar como funciona por dentro",
-      "beneficio": "Impacto direto: ex: elimina 13h/mês de trabalho manual, reduz erros em 80%, nunca perde um cliente por falta de follow-up"
-    }
-  ]
-}
-${PLAN_END}
+1. MOSTRE A DOR com os números reais:
+   "Você está perdendo X horas/mês nesse processo. Em um ano, são Y horas — ou R$ Z em mão de obra."
 
-REGRAS absolutas para o diagnóstico:
-- "tarefas" = oportunidades identificadas, nunca passos de implementação
-- "descricao" = o problema e seu custo, nunca como resolver
-- "impacto" = o cenário futuro resolvido, nunca o método para chegar lá
-- "solucoes_possiveis" = o que nosso time pode construir, pelo resultado que entrega — não pelo funcionamento técnico
-- Gere 2 a 3 soluções específicas para o setor e problema (nunca genéricas)
-- Exemplos certos: "App de controle de pedidos em tempo real" | "Sistema de follow-up automático" | "Painel de indicadores diários no celular"
-- Exemplos errados: "Configure um CRM" | "Use planilhas compartilhadas" | "Crie um formulário no Google"
+2. ABRA O HORIZONTE sem entregar o como:
+   Descreva o cenário futuro em 1-2 frases. O que a empresa SENTE quando isso for resolvido.
+   Nunca explique tecnologia, integração ou implementação.
+
+3. CONVIDE PARA O PRÓXIMO PASSO com o time:
+   Sempre termine com UMA dessas frases (varie entre elas):
+   - "Quer que eu solicite para nosso time montar uma proposta específica para a sua empresa?"
+   - "Nosso time já resolveu exatamente isso para empresas do seu setor. Posso conectar vocês?"
+   - "Identificamos uma oportunidade real aqui. O próximo passo é uma conversa com nosso time."
+   - "Posso pedir para nosso time mostrar como ficaria isso para vocês na prática?"
 
 ━━━ LINGUAGEM DE CURIOSIDADE — USE ESTAS FRASES ━━━
 Para abrir o horizonte sem entregar o caminho:
 - "Existe uma forma de eliminar exatamente esse problema — mas ela precisa ser construída para a sua realidade."
-- "Esse tipo de processo, quando automatizado corretamente, libera [X horas] por mês. Já vimos isso acontecer."
+- "Esse tipo de processo, quando resolvido do jeito certo, libera [X horas]/mês. Já vimos isso acontecer."
 - "A pergunta não é se isso tem solução — é quanto está custando cada mês que passa sem resolver."
 - "Imagine se isso acontecesse automaticamente, sem depender de ninguém lembrar."
-- "Nosso time já resolveu esse problema em empresas muito parecidas com a sua."
-- "Posso pedir para nosso time mostrar como ficaria isso especificamente para vocês?"`
+- "Nosso time já construiu algo muito parecido para uma empresa do seu setor."`
   }
 
   const savePlan = async (msgId: string, plan: PlanoIA, problemText: string) => {
@@ -523,11 +500,6 @@ Para abrir o horizonte sem entregar o caminho:
         created_at: new Date().toISOString(),
       }
       addMessage(assistantMsg)
-
-      const { plan } = parsePlan(textWithoutInsights)
-      if (plan) {
-        await savePlan(assistantMsg.id, plan, text)
-      }
     } catch {
       addMessage({
         id: (Date.now() + 1).toString(),
