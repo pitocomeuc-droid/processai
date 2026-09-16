@@ -1,41 +1,47 @@
 import { NavLink } from 'react-router-dom'
-import { LayoutDashboard, MessageSquare, GitBranch, CheckSquare, User } from 'lucide-react'
+import { LayoutDashboard, MessageSquare, TrendingUp, BookOpen, User } from 'lucide-react'
 import { cn } from '@/lib/cn'
 
 const tabs = [
-  { to: '/dashboard', icon: LayoutDashboard, label: 'Início' },
-  { to: '/processos', icon: GitBranch, label: 'Processos' },
-  { to: '/chat', icon: MessageSquare, label: 'IA' },
-  { to: '/melhorias', icon: CheckSquare, label: 'Melhorias' },
-  { to: '/perfil', icon: User, label: 'Perfil' },
+  { to: '/dashboard',     icon: LayoutDashboard, label: 'Início' },
+  { to: '/oportunidades', icon: TrendingUp,       label: 'Oport.' },
+  { to: '/chat',          icon: MessageSquare,    label: 'IA' },
+  { to: '/biblioteca',    icon: BookOpen,         label: 'Biblioteca' },
+  { to: '/perfil',        icon: User,             label: 'Perfil' },
 ]
 
 export function BottomNav() {
   return (
-    <nav className="fixed bottom-0 left-0 right-0 z-50 safe-bottom glass border-t border-white/6">
-      <div className="flex items-center justify-around px-2 pt-2 pb-1 max-w-lg mx-auto">
+    <nav
+      className="shrink-0 bg-[#080C14] border-t border-white/6"
+      style={{ paddingBottom: 'max(env(safe-area-inset-bottom), 8px)' }}
+    >
+      <div className="flex items-stretch justify-around px-1 pt-1">
         {tabs.map(({ to, icon: Icon, label }) => (
           <NavLink
             key={to}
             to={to}
             className={({ isActive }) =>
               cn(
-                'flex flex-col items-center gap-0.5 min-w-[56px] py-1 px-2 rounded-xl transition-all',
-                isActive
-                  ? 'text-indigo-400'
-                  : 'text-slate-500 hover:text-slate-300'
+                'flex flex-col items-center gap-0.5 flex-1 py-2 px-1 rounded-xl transition-all duration-150',
+                isActive ? 'text-indigo-400' : 'text-slate-600'
               )
             }
           >
             {({ isActive }) => (
               <>
                 <div className={cn(
-                  'p-1.5 rounded-xl transition-all',
-                  isActive && 'bg-indigo-500/15'
+                  'w-10 h-7 flex items-center justify-center rounded-xl transition-all duration-150',
+                  isActive ? 'bg-indigo-500/15' : ''
                 )}>
-                  <Icon size={22} strokeWidth={isActive ? 2.5 : 1.8} />
+                  <Icon size={20} strokeWidth={isActive ? 2.5 : 1.8} />
                 </div>
-                <span className="text-[10px] font-medium">{label}</span>
+                <span className={cn(
+                  'text-[10px] font-medium transition-all duration-150',
+                  isActive ? 'text-indigo-400' : 'text-slate-600'
+                )}>
+                  {label}
+                </span>
               </>
             )}
           </NavLink>

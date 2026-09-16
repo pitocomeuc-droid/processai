@@ -1,0 +1,460 @@
+================================================================
+PROCESSAI — ESPECIFICAÇÃO COMPLETA DO SISTEMA
+Documento de planejamento — STATUS: COMPLETO ✓
+Recebido: partes 1 a 52
+================================================================
+
+================================================================
+ESSÊNCIA DO PRODUTO (resumo do criador)
+================================================================
+
+  "O cliente conhece a empresa dele.
+   Você conhece processos.
+   A IA conecta os dois."
+
+  CICLO:
+  Cliente conta → IA aprende → IA investiga → IA encontra →
+  Vocês criam → Cliente aplica → ProcessAI mede → IA aprende novamente.
+
+================================================================
+PARTE 1: OBJETIVO PRINCIPAL
+================================================================
+O ProcessAI deve descobrir:
+- como a empresa funciona hoje
+- onde ela perde tempo / retrabalho / tarefas manuais / erros
+- perdas financeiras / falta de acompanhamento
+- processos que podem ser padronizados / automatizados
+- sistemas que podem ser criados
+- resultados que podem ser medidos depois
+
+REGRA CENTRAL:
+A IA nunca apenas responde.
+"O que ainda preciso descobrir sobre essa empresa para entender
+realmente esse problema?"
+
+================================================================
+PARTE 2: JORNADA DO CLIENTE
+================================================================
+TELA INICIAL (Landing):
+  ProcessAI
+  "Conte como sua empresa funciona.
+   Nós identificamos onde processos, tecnologia e inteligência
+   podem trabalhar por você."
+  [Começar diagnóstico] [Continuar diagnóstico] [Entrar]
+
+ETAPA 1 — SOBRE A EMPRESA:
+  1. Nome da empresa
+  2. Segmento
+  3. O que vende ou entrega
+  4. Há quanto tempo existe
+  5. Quantas pessoas trabalham
+  6. Quantas unidades
+  7. Faturamento médio mensal:
+     até R$20k / 20-50k / 50-100k / 100-300k /
+     300k-1M / acima de 1M / prefiro não informar
+  8. Quem responde:
+     proprietário/sócio/diretor/gerente/coordenador/
+     funcionário/consultor/outro
+  9. Função dessa pessoa
+
+================================================================
+PARTE 3: PERGUNTAS MAIS IMPORTANTES
+================================================================
+  A) "Se pudesse resolver 3 problemas da empresa hoje, quais seriam?"
+  B) "O que mais toma seu tempo atualmente?"
+  C) "Qual tarefa gostaria de nunca mais fazer manualmente?"
+
+================================================================
+PARTE 4: PERGUNTA DE DESEJO
+================================================================
+  "Se o ProcessAI pudesse criar uma solução, o que faria?"
+  → IA interpreta: necessidade / solução / processo / impacto
+
+================================================================
+PARTE 5: ESCOLHA DOS SETORES
+================================================================
+  Múltipla escolha (marca os que existem na empresa):
+  Administração / Financeiro / Compras / Estoque /
+  Comercial / Vendas / Atendimento / WhatsApp / Marketing /
+  Clientes-CRM / Operação / Produção / Logística /
+  RH / Gestão / Projetos / Pós-venda / Qualidade /
+  Manutenção / Outros
+  → IA adapta questionário por área selecionada
+
+================================================================
+PARTE 6: IA INVESTIGATIVA — DIFERENCIAL CENTRAL
+================================================================
+  IA NÃO usa questionário fixo.
+  Gera novas perguntas conforme as respostas.
+
+  Exemplo (estoque):
+  IA: "Como controlam o estoque?" →
+  Cliente: "Planilha" →
+  IA: "Quem atualiza?" →
+  Cliente: "Gerente" →
+  IA: "Com que frequência?" →
+  Cliente: "Quando lembra" →
+  IA: "O que acontece quando não atualiza?" →
+  Cliente: "Compramos o que já temos."
+  → IA entendeu o problema real.
+
+================================================================
+PARTE 7: REGRA PRINCIPAL DA IA
+================================================================
+  Antes de concluir, entender:
+  Como funciona / Quem faz / Quando / Onde registra /
+  Quanto tempo / Quantas vezes / Quais erros / Consequências /
+  Custo / O que já tentaram / Resultado ideal
+
+================================================================
+PARTE 8: MÉTODO C.O.N.T.E.X.T.O. (MARCA PRÓPRIA)
+================================================================
+  C — Como funciona hoje
+  O — Onde está o problema
+  N — Necessidade real
+  T — Tempo utilizado
+  E — Erros e desperdícios
+  X — Experiência desejada
+  T — Tecnologia atual
+  O — Objetivo final
+
+================================================================
+PARTE 9: EXEMPLO WHATSAPP
+================================================================
+  Investigar antes de sugerir:
+  Mensagens/dia / pessoas / único ou vários / histórico /
+  orçamentos / follow-up / tempo de resposta /
+  perda de clientes / mensagem padrão / pós-venda / conversão.
+  → DIAGNÓSTICO → CAUSAS → SOLUÇÃO
+
+================================================================
+PARTES 10-16: BANCO DE PERGUNTAS POR ÁREA
+================================================================
+VENDAS:
+  Canal / registro de oportunidade / funil / quem vende /
+  metas / acompanhamento / comissão /
+  funil completo (orçamento→proposta→compra→desistência) /
+  ticket médio / conversão / motivo de perda / follow-up /
+  pós-venda / revenda
+
+ESTOQUE:
+  Sistema/planilha/manual / quem/quando atualiza /
+  mínimo/máximo / inventário / perdas / validade /
+  rastreamento / critério de compra /
+  histórico de consumo / previsão de demanda /
+  comparação compra×consumo / tempo gasto
+
+COMPRAS:
+  Solicitante / aprovador / comprador / critério /
+  fornecedores cadastrados / comparação preços /
+  histórico / pedido de compra / aprovação / conferência /
+  compras emergenciais (por quê?)
+
+FINANCEIRO:
+  Receitas/despesas / fluxo de caixa / DRE /
+  previsão / quanto precisam faturar /
+  custo fixo / margem / lucro / categoria /
+  conciliação / contas a pagar e receber /
+  atrasos / cobrança automática
+
+FUNCIONÁRIOS:
+  Quantidade / setores / descrição de função / organograma /
+  responsabilidades / produtividade / treinamento /
+  integração de novos / procedimentos documentados /
+  avaliação / metas / erros / ocorrências /
+  dependência do dono ← CRÍTICO
+
+PROCESSOS MANUAIS (seção específica):
+  Papel / digitação dupla / planilhas manuais /
+  relatórios / cópia entre sistemas /
+  mensagens repetitivas / conferências manuais /
+  tarefas que dependem de lembrar /
+  tarefas diárias / semanais / mensais
+
+================================================================
+PARTE 15: PERGUNTAS OBRIGATÓRIAS PARA O DONO
+================================================================
+  A) "Quais tarefas dependem diretamente de você?"
+  B) "Se ficar 30 dias fora, o que deixaria de funcionar?"
+  C) "Quais decisões só você consegue tomar?"
+  D) "Quais informações a equipe sempre pede para você?"
+  E) "O que você repete para funcionários quase todo dia?"
+  → Essas respostas viram processos.
+
+================================================================
+PARTES 17-18: TEMPO E FINANCEIRO
+================================================================
+  TEMPO: por processo → faixa de tempo × frequência
+  ProcessAI calcula: horas/mês (ex: 30min × 26 dias = 13h/mês)
+
+  FINANCEIRO: perda mensal → mostra impacto anual
+  → Torna a solução muito mais valiosa
+
+================================================================
+PARTES 19-21: MEMÓRIA E HISTÓRIA
+================================================================
+  Memória empresarial: banco próprio por empresa, nunca mistura.
+  Informação nunca desaparece: antes/depois com data.
+  Timeline: histórico com datas de cada evento.
+
+================================================================
+PARTE 22: DASHBOARD DO CLIENTE
+================================================================
+  Olá, Empresa X
+  Contexto empresarial: 76% conhecido
+  54 processos | 16 gargalos | 8 oportunidades
+  3 soluções implantadas | 5 em estudo
+
+================================================================
+PARTES 23-24: COMO A IA RESPONDE
+================================================================
+  Sempre investigar antes de sugerir.
+  Botão principal: CONVERSAR COM A PROCESSAI
+
+================================================================
+PARTE 25: PROMPT PRINCIPAL DA IA
+================================================================
+  Você é a inteligência empresarial do ProcessAI.
+  Não apenas responde — compreende como a empresa funciona,
+  descobre gargalos, tarefas manuais, desperdícios, retrabalho.
+  Considera todo contexto registrado.
+  Investiga antes de recomendar.
+  DIFERENCIA FATOS INFORMADOS de HIPÓTESES. ← CRÍTICO
+  Diagnóstico estruturado só com informação suficiente.
+
+================================================================
+PARTES 26-29: CLASSIFICAÇÃO, CONFIANÇA, PRIORIZAÇÃO, SCORE
+================================================================
+  CLASSIFICAÇÃO: fato / problema / hipótese / oportunidade /
+  solução sugerida / aprovada / em desenvolvimento /
+  implantada / resultado confirmado
+
+  CONFIANÇA: Alta / Média / Baixa por análise
+
+  PRIORIZAÇÃO: Impacto × Urgência × Facilidade ×
+  Potencial de economia/receita
+
+  SCORE ProcessAI (0-100):
+  Processos / Controle / Tecnologia / Vendas /
+  Financeiro / Pessoas / Automação / Gestão
+
+================================================================
+PARTE 30-31: TELAS DE OPORTUNIDADE E SOLUÇÃO
+================================================================
+  OPORTUNIDADE: nome / impacto / problema atual /
+  tempo gasto / economia estimada / [Ver oportunidade]
+
+  SOLUÇÃO: problema / como funciona hoje / consequências /
+  solução proposta / funcionalidades / resultado esperado
+
+================================================================
+PARTE 32-33: ADMIN COMPLETO
+================================================================
+  MENU ADMIN: Visão Geral / Clientes / Empresas /
+  Diagnósticos / Oportunidades / Projetos / Soluções /
+  Processos / Biblioteca / IA ProcessAI /
+  Relatórios / Suporte / Planos / Usuários / Configurações
+
+  FICHA DO CLIENTE: Resumo / Contexto / Setores /
+  Problemas / Processos / Oportunidades / Soluções /
+  Histórico / Conversas IA / Documentos / Indicadores
+
+================================================================
+PARTE 34: MAPA DE PROCESSOS
+================================================================
+  Visualização de fluxo:
+  Instagram → WhatsApp → Resposta → Orçamento →
+  Decisão → Pagamento → Entrega → Pós-venda
+  IA identifica lacunas no fluxo.
+
+================================================================
+PARTES 35-37: BIBLIOTECA + REGRAS INTERNAS
+================================================================
+  BIBLIOTECA PROCESSAI: soluções que o time sabe fazer.
+  Cada solução: problema que resolve / quando usar /
+  informações necessárias / como implementar / indicadores.
+
+  DOIS CÉREBROS: conhecimento ProcessAI + inteligência IA.
+  NÃO é só ChatGPT — é o MÉTODO de vocês.
+
+  BOTÃO ADMIN "ENSINAR PROCESSAI": adicionar regras internas.
+
+================================================================
+PARTE 38-39: GRÁFICOS E ANTES × DEPOIS
+================================================================
+  Gráficos: contexto% / gargalos por setor /
+  oportunidades / tempo economizado / economia / receita adicional
+  * Sempre distinguir: estimativa vs confirmado
+
+  ANTES × DEPOIS: visual comparativo com resultados reais.
+
+================================================================
+PARTES 40-44: PERGUNTAS PERIÓDICAS, FEEDBACK, SEGURANÇA
+================================================================
+  Perguntas automáticas periódicas: o que mudou? novo problema?
+  Feedback de soluções: nota 0-10 / tempo / dinheiro / erros.
+  Segurança: dados NUNCA misturados entre empresas.
+  Tela "O que a ProcessAI sabe sobre minha empresa?" + edição.
+  Botão "Encontrar oportunidades" — reanálise do contexto.
+
+================================================================
+PARTES 45-46: ESTRUTURA TÉCNICA DO BANCO
+================================================================
+  TABELAS:
+  companies / users / departments / company_context /
+  processes / problems / opportunities / solutions /
+  projects / conversations / ai_memories / metrics /
+  results / documents / tasks / knowledge_base /
+  question_templates / answers
+
+  AI_MEMORIES:
+  company_id / type / category / fact /
+  source / date / confidence / status /
+  related_process / related_department
+
+================================================================
+PARTE 47: LIGAÇÃO ENTRE INFORMAÇÕES
+================================================================
+  Relacionamentos entre memórias:
+  Exemplo:
+    Fato: "Inventário realizado manualmente toda segunda-feira."
+    Empresa: ABC | Tipo: fato | Setor: estoque | Confiança: Alta
+    Fonte: proprietário
+
+    Problema: "Compra emergencial"
+    Relacionado a: Controle de estoque → Inventário semanal →
+    Falta de estoque mínimo
+
+  → Permite que a IA pense melhor e conecte contextos.
+
+================================================================
+PARTE 48: PRIMEIRO MVP (PRIORIDADE)
+================================================================
+  Lançar primeiro (nessa ordem):
+  1. Cadastro ✓
+  2. Perfil da empresa ✓
+  3. Diagnóstico inicial ← expandir
+  4. Chat com IA ✓
+  5. Memória da empresa ✓
+  6. Setores ← adicionar
+  7. Problemas ← estruturar
+  8. Oportunidades ← criar
+  9. Soluções ✓
+  10. Painel administrativo ✓ (expandir)
+  11. Histórico ← criar
+  12. Biblioteca ProcessAI ← criar
+  13. Gráficos básicos ← expandir
+
+  Depois: automações e sistemas internos.
+
+================================================================
+PARTE 49-50: MENUS
+================================================================
+  MENU CLIENTE:
+  Início / Minha Empresa / Conversar com a IA /
+  Diagnóstico / Processos / Oportunidades /
+  Soluções / Resultados / Documentos / Configurações
+
+  MENU ADMIN (completo):
+  Visão Geral / Clientes / Empresas / Diagnósticos /
+  Oportunidades / Projetos / Soluções / Processos /
+  Biblioteca / IA ProcessAI / Relatórios /
+  Suporte / Planos / Usuários / Configurações
+
+================================================================
+PARTE 51: MENSAGEM DE ABERTURA DA IA
+================================================================
+  "Olá! Quero entender como sua empresa funciona de verdade.
+
+  Não existe resposta certa ou errada.
+
+  Quanto mais detalhes você me der sobre sua rotina,
+  dificuldades e processos, melhores serão as oportunidades
+  que conseguiremos encontrar.
+
+  Para começar: se você pudesse resolver três problemas
+  da sua empresa hoje, quais seriam?"
+
+================================================================
+PARTE 52: O PONTO MAIS IMPORTANTE + ESSÊNCIA
+================================================================
+  NÃO fazer IA que diga: "Você tem problema no estoque."
+
+  FAZER IA capaz de dizer:
+  "Pelas informações que você forneceu, encontrei uma relação
+  entre a falta de estoque mínimo, as compras emergenciais e
+  o fato de o inventário ser atualizado apenas uma vez por semana.
+  Antes de sugerirmos uma solução, preciso entender como vocês
+  registram as entradas de mercadoria."
+
+  ESSÊNCIA EM UMA FRASE:
+  "O cliente conhece a empresa dele.
+   Você conhece processos.
+   A IA conecta os dois."
+
+  CICLO COMPLETO:
+  Cliente conta → IA aprende → IA investiga → IA encontra →
+  Vocês criam → Cliente aplica → ProcessAI mede →
+  IA aprende novamente.
+
+================================================================
+STATUS DE IMPLEMENTAÇÃO
+================================================================
+
+JÁ EXISTE (aproveitar):
+✓ Auth completo (login, cadastro, recuperação de senha)
+✓ Onboarding básico (companies table)
+✓ Chat com Claude claude-sonnet-4-6
+✓ client_context table (contexto acumulado)
+✓ improvement_tasks (planos gerados pela IA)
+✓ solutions table (soluções entregues)
+✓ Admin panel com feed em tempo real
+✓ Tela Soluções (cliente)
+✓ Dashboard com health score
+✓ Perfil redesenhado com stats reais
+
+IMPLEMENTAR — FASE 1 (FUNDAÇÃO):
+[ ] 1. Onboarding expandido:
+        faixas de faturamento / quem responde / função /
+        perguntas de desejo / seleção múltipla de áreas
+[ ] 2. Prompt da IA reescrito:
+        C.O.N.T.E.X.T.O. / investigativo / fatos vs hipóteses /
+        mensagem de abertura / não responder prematuramente
+[ ] 3. Landing page nova:
+        nova copy / 3 botões / visual premium
+
+IMPLEMENTAR — FASE 2 (DIAGNÓSTICO):
+[ ] 4. Banco de perguntas por área (vendas/estoque/compras/RH/fin)
+[ ] 5. Perguntas obrigatórias para o dono
+[ ] 6. Cálculo de tempo mensal + impacto financeiro
+[ ] 7. Classificação de informações (fato/hipótese/oportunidade)
+[ ] 8. Grau de confiança por análise
+
+IMPLEMENTAR — FASE 3 (VISUALIZAÇÃO):
+[ ] 9.  Dashboard novo: % contexto / gargalos / oportunidades
+[ ] 10. Tela Oportunidades Identificadas
+[ ] 11. Tela Solução ProcessAI (detalhe)
+[ ] 12. Antes × Depois com resultados reais
+[ ] 13. Score ProcessAI por dimensão
+[ ] 14. Timeline da empresa
+
+IMPLEMENTAR — FASE 4 (ADMIN AVANÇADO):
+[ ] 15. Admin: menu completo expandido
+[ ] 16. Admin: ficha completa do cliente
+[ ] 17. Biblioteca ProcessAI
+[ ] 18. Botão "Ensinar ProcessAI"
+[ ] 19. Mapa de processos (fluxograma)
+
+IMPLEMENTAR — FASE 5 (BANCO):
+[ ] 20. Migrar/criar tabelas:
+        departments / processes / problems /
+        opportunities / ai_memories / question_templates
+[ ] 21. Relacionamentos entre memórias
+[ ] 22. Histórico antes/depois com datas
+[ ] 23. Tela "O que a ProcessAI sabe sobre minha empresa?"
+[ ] 24. Perguntas periódicas automáticas
+[ ] 25. Feedback de soluções implantadas
+
+================================================================
+FIM DA ESPECIFICAÇÃO — PRONTO PARA EXECUÇÃO
+================================================================
